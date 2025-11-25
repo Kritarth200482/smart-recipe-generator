@@ -139,7 +139,7 @@ export async function recognizeIngredientsFromImage(imageFile: File): Promise<st
   
   // Return 3-5 random ingredients as a simulation
   const count = Math.floor(Math.random() * 3) + 3;
-  const selected = [];
+  const selected: string[] = [];
   for (let i = 0; i < count; i++) {
     const random = mockIngredients[Math.floor(Math.random() * mockIngredients.length)];
     if (!selected.includes(random)) {
