@@ -2,6 +2,11 @@
 
 A modern web application that suggests recipes based on available ingredients, with support for ingredient recognition from images, dietary preferences, and personalized recommendations.
 
+## Live Demo
+
+- **Production URL**: [https://smart-recipe-generator-3uvt.vercel.app](https://smart-recipe-generator-3uvt.vercel.app)
+- **GitHub Repo**: [https://github.com/Kritarth200482/smart-recipe-generator](https://github.com/Kritarth200482/smart-recipe-generator)
+
 ## Features
 
 ### Core Features
@@ -98,8 +103,8 @@ The matching algorithm:
 2. Calculates match score based on percentage of matched ingredients
 3. Checks for ingredient substitutions
 4. Filters by dietary preferences and user filters
-5. Returns recipes sorted by match score (highest first)
-6. Only shows recipes with ≥50% ingredient match
+5. Computes a blended score that considers how many recipe ingredients you can cover and how many of your inputs are used
+6. Surfaces any recipe with at least one matching ingredient and a score ≥20%, prioritizing the best matches first
 
 ### Ingredient Recognition
 
